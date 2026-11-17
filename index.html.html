@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Essence Coffee – Kopi lokal di antara jalan raya dan sawah</title>
+<meta name="description" content="Essence Coffee, kedai kopi lokal di Ds. Mandirejo, Kec. Merakurak. Kopi premium, suasana tenang, free WiFi. Buka setiap hari 08.00–24.00.">
+<meta name="theme-color" content="#17100b">
+<meta property="og:title" content="Essence Coffee – Good coffee, good mood">
+<meta property="og:description" content="Berhenti sejenak di antara jalan raya dan sawah, lalu temukan kembali esensi ketenangan.">
+<meta property="og:image" content="logo.jpg">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="cup" viewBox="0 0 48 48"><path d="M10 24h26v6a10 10 0 0 1-10 10h-6a10 10 0 0 1-10-10z"/><path d="M36 26h3a4 4 0 0 1 0 8h-4"/><path d="M6 43h34"/><path d="M18 17c-2-3 2-4 0-8M26 17c-2-3 2-4 0-8"/></symbol>
+  <symbol id="wifi" viewBox="0 0 48 48"><path d="M5 18a26 26 0 0 1 38 0M11 25a17 17 0 0 1 26 0M17 32a8 8 0 0 1 14 0"/><circle cx="24" cy="38" r="2"/></symbol>
+  <symbol id="home" viewBox="0 0 48 48"><path d="M6 22 24 7l18 15M11 20v21h26V20M20 41V29h8v12"/></symbol>
+  <symbol id="bean" viewBox="0 0 48 48"><ellipse cx="24" cy="24" rx="12" ry="17" transform="rotate(35 24 24)"/><path d="M16 36c8-6 8-18 16-24"/></symbol>
+  <symbol id="arch" viewBox="0 0 100 120"><path d="M5 120V50a45 45 0 0 1 90 0v70M17 120V50a33 33 0 0 1 66 0v70M29 120V50a21 21 0 0 1 42 0v70M41 120V50a9 9 0 0 1 18 0v70"/></symbol>
+</svg>
+
+<!-- Layar pembuka dengan logo -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="pl-inner">
+    <div class="pl-medal"><span class="pl-ring"></span><img src="logo.jpg" alt=""></div>
+    <p class="pl-name">ESSENCE COFFEE</p>
+    <p class="pl-tag">Good coffee, good mood</p>
+    <span class="pl-bar"><i></i></span>
+  </div>
+</div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header id="top">
+  <div class="wrap">
+    <a href="#beranda" class="logo" aria-label="Essence Coffee, ke beranda"><img src="logo-sm.jpg" alt="" width="44" height="44"><span>ESSENCE</span></a>
+    <nav id="nav" aria-label="Menu utama">
+      <ul>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#paket">Paket</a></li>
+        <li><a href="#keunggulan">Keunggulan</a></li>
+        <li><a href="#tim">Tim</a></li>
+        <li><a href="#kunjungi">Kunjungi</a></li>
+      </ul>
+    </nav>
+    <div class="tools">
+      <button class="btn cartbtn" id="cartOpen" aria-label="Buka pesanan">Pesanan <b id="cartCount">0</b></button>
+      <button class="burger btn" id="burger" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="nav">Menu</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="beranda">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-glow"></div>
+  <div class="wrap hero-in">
+    <div class="medal"><span class="ring"></span><span class="ring r2"></span><img src="logo.jpg" alt="Logo Essence Coffee: cangkir latte dengan tagline Good coffee, good mood"></div>
+    <p class="eyebrow h-in">Kedai kopi lokal · Merakurak, Tuban</p>
+    <h1><span class="w"><span>Essence</span></span> <span class="w"><span><em>Coffee</em></span></span></h1>
+    <p class="tagline h-in">Berhenti sejenak di antara jalan raya dan sawah, lalu temukan kembali esensi ketenangan.</p>
+    <div class="cta h-in">
+      <a class="btn gold" href="#menu">Lihat menu</a>
+      <a class="btn" href="#kunjungi">Kunjungi kami</a>
+    </div>
+    <div class="info h-in">
+      <span class="status" id="status"><i></i><span>Buka setiap hari, 08.00–24.00</span></span>
+      <span>Ds. Mandirejo, Kec. Merakurak</span>
+    </div>
+  </div>
+  <a class="cue" href="#tentang" aria-label="Gulir ke bawah"><i></i></a>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>Kopi lokal</span><b>✦</b><span>Bahan segar</span><b>✦</b><span>Cozy space</span><b>✦</b><span>Free WiFi</span><b>✦</b><span>Buka 08.00–24.00</span><b>✦</b>
+  <span>Kopi lokal</span><b>✦</b><span>Bahan segar</span><b>✦</b><span>Cozy space</span><b>✦</b><span>Free WiFi</span><b>✦</b><span>Buka 08.00–24.00</span><b>✦</b>
+</div></div>
+
+<section id="tentang">
+  <div class="wrap split">
+    <div>
+      <span class="eyebrow">Cerita kami</span>
+      <h2>Tentang kami</h2>
+      <p class="lead">Essence Coffee lahir dari sebuah persimpangan sederhana: antara jalan raya yang tak pernah tidur dan hamparan sawah yang selalu menenangkan.</p>
+      <p class="lead">Kami percaya kopi terbaik bukan hanya soal rasa, tapi soal tempat ia dinikmati. Di sini, kamu bisa menyeruput kopi premium sambil melihat padi menguning, mendengar angin, dan melepas penat dari bisingnya perjalanan.</p>
+      <p class="lead">Essence Coffee bukan sekadar warkop. Ini adalah tempat berhenti sejenak untuk menemukan kembali esensi dari ketenangan.</p>
+      <ul class="feats">
+        <li><svg class="icon"><use href="#cup"/></svg>Kopi lokal</li>
+        <li><svg class="icon"><use href="#bean"/></svg>Bahan segar</li>
+        <li><svg class="icon"><use href="#home"/></svg>Cozy space</li>
+        <li><svg class="icon"><use href="#wifi"/></svg>Free WiFi</li>
+      </ul>
+    </div>
+    <div class="collage">
+      <div class="a"><img src="tentang-1.jpg" alt="Interior kedai dengan jendela kayu dan kursi hangat" loading="lazy"></div>
+      <div><img src="tentang-2.jpg" alt="Kopi dan air putih di atas nampan" loading="lazy"></div>
+      <div><img src="tentang-3.jpg" alt="Rak toples biji kopi dan papan menu" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section class="green" id="visi">
+  <div class="wrap visi">
+    <div class="archfr"><img src="visi.jpg" alt="Dua cangkir kopi dan cake cokelat di meja marmer" loading="lazy"></div>
+    <div>
+      <span class="eyebrow">Arah kami</span>
+      <h2>Visi</h2>
+      <p class="quote">Menjadi kedai kopi lokal terbaik yang menghadirkan pengalaman kopi autentik Indonesia dan menjadi ruang ketiga yang nyaman bagi semua kalangan.</p>
+      <h2 class="sub">Misi</h2>
+      <ul class="misi">
+        <li>Menyajikan kopi berkualitas dari biji pilihan petani lokal</li>
+        <li>Menciptakan suasana nyaman sebagai tempat bekerja dan bersantai</li>
+        <li>Memberikan pelayanan terbaik dengan harga yang terjangkau</li>
+        <li>Mendukung ekosistem kopi Indonesia secara berkelanjutan</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="wrap">
+    <span class="eyebrow">Sajian kami</span>
+    <h2>Menu kami</h2>
+    <p class="lead">Pilih minuman atau cake favoritmu, tambahkan ke pesanan, lalu kirim lewat WhatsApp.</p>
+    <div class="tabs" role="group" aria-label="Kategori menu">
+      <button aria-pressed="true" data-cat="all">Semua</button>
+      <button aria-pressed="false" data-cat="kopi">Kopi</button>
+      <button aria-pressed="false" data-cat="nonkopi">Non-kopi</button>
+      <button aria-pressed="false" data-cat="dessert">Dessert</button>
+    </div>
+    <div class="menu" id="menuGrid"></div>
+  </div>
+</section>
+
+<section class="dark" id="paket">
+  <div class="wrap">
+    <span class="eyebrow">Hemat &amp; lengkap</span>
+    <h2>Paket nongkrong</h2>
+    <p class="lead">Tiga pilihan paket, dari yang sederhana sampai yang paling lengkap.</p>
+    <div class="plans">
+      <article class="plan">
+        <h3>Basic</h3>
+        <p class="price" data-n="15">15k</p>
+        <p>1 minuman pilihan<br>+ free water</p>
+        <a class="btn" href="https://wa.me/62882010151504?text=Halo%20Essence%20Coffee%2C%20saya%20mau%20pesan%20Paket%20Basic" target="_blank" rel="noopener">Pesan paket</a>
+      </article>
+      <article class="plan hot">
+        <span class="badge">Paling dipilih</span>
+        <h3>Favorit</h3>
+        <p class="price" data-n="35">35k</p>
+        <p>1 kopi signature<br>+ 1 snack pilihan</p>
+        <a class="btn dk" href="https://wa.me/62882010151504?text=Halo%20Essence%20Coffee%2C%20saya%20mau%20pesan%20Paket%20Favorit" target="_blank" rel="noopener">Pesan paket</a>
+      </article>
+      <article class="plan">
+        <h3>Premium</h3>
+        <p class="price" data-n="55">55k</p>
+        <p>2 minuman + 2 snack<br>+ tempat duduk VIP</p>
+        <a class="btn" href="https://wa.me/62882010151504?text=Halo%20Essence%20Coffee%2C%20saya%20mau%20pesan%20Paket%20Premium" target="_blank" rel="noopener">Pesan paket</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="keunggulan">
+  <div class="wrap adv">
+    <div>
+      <span class="eyebrow">Kenapa kami</span>
+      <h2>Keunggulan kami</h2>
+      <div class="advlist" role="tablist" aria-label="Keunggulan">
+        <button role="tab" aria-selected="true" data-i="0"><h3>Biji kopi lokal pilihan</h3><p>Sumber langsung dari petani Flores, Aceh, dan Toraja.</p></button>
+        <button role="tab" aria-selected="false" data-i="1"><h3>Harga terjangkau</h3><p>Kualitas premium dengan harga ramah di kantong pelajar.</p></button>
+        <button role="tab" aria-selected="false" data-i="2"><h3>Suasana cozy dan instagrammable</h3><p>Interior estetik dengan pencahayaan hangat dan spot foto menarik.</p></button>
+        <button role="tab" aria-selected="false" data-i="3"><h3>Free WiFi dan coworking area</h3><p>Zona kerja nyaman dengan koneksi internet stabil.</p></button>
+      </div>
+    </div>
+    <div class="advimg">
+      <img class="on" src="adv-1.jpg" alt="Biji kopi tumpah dari mangkuk kayu" loading="lazy">
+      <img src="adv-2.jpg" alt="Minuman cokelat dingin di atas kayu" loading="lazy">
+      <img src="adv-3.jpg" alt="Biji kopi melayang di atas kain hitam" loading="lazy">
+      <img src="adv-4.jpg" alt="Gelas kaca berisi biji kopi" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="green" id="untuk">
+  <div class="wrap split">
+    <div class="pics">
+      <div class="p1"><img src="untuk-1.jpg" alt="Barista tersenyum sambil mencatat" loading="lazy"></div>
+      <div><img src="untuk-2.jpg" alt="Pengunjung bekerja dengan laptop" loading="lazy"></div>
+      <div><img src="untuk-3.jpg" alt="Area kedai yang luas dan terang" loading="lazy"></div>
+    </div>
+    <div>
+      <span class="eyebrow">Pengunjung kami</span>
+      <h2>Untuk siapa Essence Coffee</h2>
+      <p class="lead">Konsumen sasaran kami: mereka yang butuh tempat nyaman untuk bekerja, belajar, atau sekadar berhenti sejenak.</p>
+      <dl class="seg">
+        <dt>Demografi</dt><dd>Usia 17–35 tahun, pelajar, mahasiswa, pekerja muda.</dd>
+        <dt>Psikografi</dt><dd>Gaya hidup aktif, suka nongkrong, produktif, lifestyle-oriented.</dd>
+        <dt>Perilaku</dt><dd>Mencari tempat nyaman untuk bekerja atau bersantai.</dd>
+        <dt>Geografis</dt><dd>Sekitar kampus, perkantoran, dan area perumahan urban.</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="tim">
+  <div class="wrap">
+    <div class="c"><span class="eyebrow">Di balik layar</span></div>
+    <h2 class="c">Organisasi kelompok</h2>
+    <div class="team">
+      <figure><div class="archfr"><img src="tim-1.jpg" alt="Nanda Bagus Riza S." loading="lazy"></div><figcaption><b>Ketua</b>Nanda Bagus Riza S.<small>260101013</small></figcaption></figure>
+      <figure><div class="archfr"><img src="tim-2.jpg" alt="Radit Eka Arzuliyansyah" loading="lazy"></div><figcaption><b>Sekretaris</b>Radit Eka Arzuliyansyah<small>260101063</small></figcaption></figure>
+      <figure><div class="archfr"><img src="tim-3.jpg" alt="Mukasafah Rohaini" loading="lazy"></div><figcaption><b>Keuangan</b>Mukasafah Rohaini<small>260101057</small></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="kunjungi">
+  <svg class="archdeco" viewBox="0 0 100 120" aria-hidden="true"><use href="#arch"/></svg>
+  <div class="wrap">
+    <span class="eyebrow">Mampir yuk</span>
+    <h2>Kunjungi kami</h2>
+    <p class="lead">Rasakan pengalaman kopi terbaik bersama kami.</p>
+    <div class="visitbox">
+      <div><small>Alamat</small>Ds. Mandirejo, Kec. Merakurak</div>
+      <div><small>Telepon / WhatsApp</small><a href="https://wa.me/62882010151504" target="_blank" rel="noopener">0882 0101 51504</a></div>
+      <div><small>Jam buka</small>Senin–Minggu, 08.00–24.00</div>
+    </div>
+    <div class="cta">
+      <a class="btn gold" href="https://wa.me/62882010151504" target="_blank" rel="noopener">Chat WhatsApp</a>
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Mandirejo+Merakurak+Tuban" target="_blank" rel="noopener">Buka di Maps</a>
+      <a class="btn" href="https://www.instagram.com/warkoprp.tuban" target="_blank" rel="noopener">Instagram</a>
+      <a class="btn" href="https://www.tiktok.com/@warkoprp.tuban" target="_blank" rel="noopener">TikTok</a>
+    </div>
+  </div>
+</section>
+
+<!-- Penutup dengan logo -->
+<section class="closing" id="penutup">
+  <div class="wrap">
+    <div class="medal big"><span class="ring"></span><span class="ring r2"></span><img src="logo.jpg" alt="Logo Essence Coffee" loading="lazy"></div>
+    <p class="eyebrow">Terima kasih sudah singgah</p>
+    <h2 class="c">Good coffee, <em>good mood.</em></h2>
+    <p class="lead">Sampai jumpa di antara jalan raya dan sawah. Secangkir ketenangan menunggumu.</p>
+    <div class="cta">
+      <button class="btn gold" id="closeOrder" type="button">Mulai pesan</button>
+      <a class="btn" href="#beranda">Kembali ke atas</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span class="logo"><img src="logo-sm.jpg" alt="" width="36" height="36"><span>ESSENCE COFFEE</span></span><span>© 2026 Essence Coffee. Hak cipta dilindungi.</span></div></footer>
+
+<button class="totop" id="toTop" aria-label="Kembali ke atas" type="button"><svg class="icon" viewBox="0 0 24 24"><path d="M6 15l6-6 6 6"/></svg></button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Pesanan kamu" aria-hidden="true">
+  <div class="dhead"><h3>Pesanan kamu</h3><button class="btn" id="cartClose">Tutup</button></div>
+  <ul class="lines" id="lines"></ul>
+  <div class="dfoot">
+    <div class="total"><span>Total</span><b id="total">Rp0</b></div>
+    <label>Nama<input id="custName" type="text" autocomplete="name" placeholder="Nama kamu"></label>
+    <label>Catatan<input id="custNote" type="text" placeholder="Contoh: less sugar, makan di tempat"></label>
+    <button class="btn gold" id="sendWA" disabled>Kirim lewat WhatsApp</button>
+  </div>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>
